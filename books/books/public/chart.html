@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>My Most Favourite Books</title>
+    <meta charset="utf8" />
+    <link rel="stylesheet" href="books.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div id="topbar"></div>
+      <div id="titlebox">
+        <h1 id="title">My Most Favourite Books</h1>
+      </div>
+      <nav>
+        <div id="menuicon">&#9776;</div>
+        <ul id="menuitemlist">
+          <li class="menuitem">
+            <a href="#" onclick="togglefunction('submenu')">Menu</a>
+            <ul class='submenu hidden' id="submenu" >
+                <li class="submenuitems"><a class="submenuitems" href="index.html">Home page</a></li>
+                <li class="submenuitems"><a class="submenuitems" href="NewBook.html">Add new book</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div id="searchicon">&#x1F50D;</div>
+
+
+       
+      </nav>
+    </header>
+    
+    <div class = "charts"> 
+    <div class="barplot">
+        <canvas id="barplot"></canvas>
+        <h2 id="charttitle"> Rating Statistics</h1>
+    </div>
+    <div class="pieplot">
+        <canvas id="pieplot"></canvas>
+        <h2 id="charttitle"> Number of authors by book</h1>
+    </div> 
+    
+
+    </div>
+    
+<script>
+ plot_chart()
+ pie_chart()
+</script>
+
+  
+    <footer>
+      <div>
+        <p>E-mail: <a href="">joe@someemail.somewhere</a></p>
+        <p>Phone: 555 888 333</p>
+        <p>&nbsp;</p>
+      </div>
+      <div>
+        <p><a href="">Section 1</a></p>
+        <p><a href="">Section 2</a></p>
+        <p><a href="">Section 3</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

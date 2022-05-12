@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>My Most Favourite Books</title>
+    <meta charset="utf8" />
+    <link rel="stylesheet" href="books.css" />
+    <script src="books.js"></script>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div id="topbar"></div>
+      <div id="titlebox">
+        <h1 id="title">My Most Favourite Books</h1>
+      </div>
+      <nav>
+        <div id="menuicon">&#9776;</div>
+        <ul id="menuitemlist">
+          <li class="menuitem">
+            <a href="#" onclick="togglefunction('submenu')">Menu</a>
+            <ul class='submenu hidden' id="submenu" >
+              <li class="submenuitems"><a class="submenuitems" href="NewBook.html">Add new book</a></li>
+              <li class="submenuitems"><a class="submenuitems" href="chart.html">Statistics</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div id="searchicon">&#x1F50D;</div>
+        <div id="searchboxarea">
+          <input id="searchbox" placeholder="Search for books..">
+          <button id="searchbutton">Search</button>
+        </div>
+      </nav>
+    </header>
+    <aside id="sidebar">
+      <h3>Maria Diniz</h3>
+      <p><a href="">Profile</a></p>
+      <p><a href="">Preferences</a></p>
+      <h3>Categorias</h3>
+      <p><a href="">Drama (1)</a></p>
+      <p><a href="">Historical Romance (2)</a></p>
+      <p><a href="">Science Fiction (5)</a></p>
+      <h3>Collections</h3>
+      <p><a href="">Holidays (4)</a></p>
+      <p><a href="">All timers (10)</a></p>
+    </aside>
+    <section>
+      <ul id="listofbooks"></ul>
+    </section>
+    <footer>
+      <div>
+        <p>E-mail: <a href="">joe@someemail.somewhere</a></p>
+        <p>Phone: 555 888 333</p>
+        <p>&nbsp;</p>
+      </div>
+      <div>
+        <p><a href="">Section 1</a></p>
+        <p><a href="">Section 2</a></p>
+        <p><a href="">Section 3</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

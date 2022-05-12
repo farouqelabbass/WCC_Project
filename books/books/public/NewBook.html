@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>My Most Favourite Books</title>
+    <meta charset="utf8" />
+    <link rel="stylesheet" href="books.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="newbook.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="topbar"></div>
+      <div id="titlebox">
+        <h1 id="title">My Most Favourite Books</h1>
+      </div>
+      <nav>
+        <div id="menuicon">&#9776;</div>
+        <ul id="menuitemlist">
+          <li class="menuitem">
+            <a href="#" onclick="togglefunction('submenu')">Menu</a>
+            <ul class='submenu hidden' id="submenu" >
+                <li class="submenuitems"><a class="submenuitems" href="index.html">Home page</a></li>
+              <li class="submenuitems"><a class="submenuitems" href="chart.html">Statistics</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div id="searchicon">&#x1F50D;</div>
+
+
+       
+      </nav>
+    </header>
+    
+    <body>    
+    <h2 id="addnew_book">Add new Book</h2><br>    
+    <div class="newbook">    
+    <div id="newbook"  >    
+        <label>
+            <b> Title </b>    
+        </label>    
+        <br>  
+        <input type="text"  id="BTitle" placeholder="Book title">    
+        <br>
+        <br>    
+        <label>
+            <b>Image</b>    
+        </label> 
+        <br>     
+        <input   id="Image" placeholder="Add image url">    
+        <br>
+        <br>
+
+        <div style="display: flex; justify-content: space-start ; padding: 2px">
+            <b style=" padding: 2px" >Rating</b>
+            <b style=" padding: 2px" id= "rating"></b>
+        </div>
+        <div id="starsstars">
+        <span onclick="fillstar(1)" class="fa fa-star" id="1"></span>
+        <span onclick="fillstar(2)" class="fa fa-star" id="2"></span>
+        <span onclick="fillstar(3)" class="fa fa-star" id="3"></span>
+        <span onclick="fillstar(4)" class="fa fa-star" id="4"></span>
+        <span onclick="fillstar(5)" class="fa fa-star" id="5"></span>
+        </div>  
+        <br> 
+        <br>
+             <b>Book category</b>  
+        <br>    
+        <input type="text" id="category" placeholder="Book category">    
+        <br> 
+        <br>
+             <b>Number rating</b>  
+        <br>    
+        <input type="number" id="NRating" placeholder="number of ratings">    
+          
+        <br>
+        <br>
+            <b>Author 1</b>  
+        <br>    
+        <input type="text" id= "author1" placeholder="Add first author "> 
+        <br>
+        <br>
+            <b>Author 2</b>  
+        <br>    
+        <input type="text" id= "author2" placeholder="Add second author if exists"> 
+        <br>
+        <br>
+            <b>Author 3 </b>  
+        <br>    
+        <input type="text" id= "author3" placeholder="Add third author if exists "> 
+        <br>
+        <br>
+        <button id= "dubmit" onClick="AddNewBook()" > Submit </button>    
+   
+    </div>     
+</div>    
+</body> 
+
+
+
+    <footer>
+      <div>
+        <p>E-mail: <a href="">joe@someemail.somewhere</a></p>
+        <p>Phone: 555 888 333</p>
+        <p>&nbsp;</p>
+      </div>
+      <div>
+        <p><a href="">Section 1</a></p>
+        <p><a href="">Section 2</a></p>
+        <p><a href="">Section 3</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
